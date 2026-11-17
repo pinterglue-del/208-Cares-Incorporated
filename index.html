@@ -1,1 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>208 Cares Incorporated | Compassionate Community Relief & Veteran Support</title>
+    <meta name="description" content="208 Cares Incorporated (EIN: 47-3477357) is a dedicated 501(c)(3) nonprofit organization providing community support, direct relief, and assistance in Boise, Idaho. Official domain: 208cares.bond.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18225770213"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18225770213');
+    </script>
+    <!-- Google Ads Conversion Snippet -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18225770213/5BZ0CPSugP0cEOXd3PJD',
+            'value': 1.0,
+            'currency': 'USD',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-accent: #2563eb;
+            --blue-light: #eff6ff;
+            --secondary: #0f172a;
+            --accent-gold: #d97706;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-main);
+            background-color: #ffffff;
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+        /* Top Navigation Bar */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .logo-badge {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-accent));
+            color: white;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .nav-links a:hover {
+            color: var(--primary-accent);
+        }
 
+        /* Hero Header Section */
+        .hero-main {
+            padding: 4.5rem 5% 3.5rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero-main h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+        .hero-main p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* Blue Mid Banner Section */
+        .blue-banner {
+            background-color: var(--primary-accent);
+            color: #ffffff;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        .blue-banner-container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .blue-banner h2 {
+            color: #ffffff;
+            font-size: 2.4rem;
+            margin-bottom: 1.8rem;
+            font-weight: 700;
+        }
+        .blue-banner p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Content / Image Row Section */
+        .content-section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .content-image img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+        .content-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--text-dark);
+        }
+        .content-text p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Dark Bottom Banner Section */
+        .dark-banner {
+            background-color: var(--secondary);
+            color: #cbd5e1;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        .dark-banner-container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .dark-banner h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .dark-banner p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+        }
+        .action-prompt {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .action-prompt a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        /* Full About Section Expanded */
+        .about-expanded-section {
+            padding: 5rem 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .about-expanded-section h2 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .about-expanded-section p {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .about-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+        .about-card h4 {
+            color: var(--primary-accent);
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
+        }
+        .about-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #ffffff;
+            color: var(--text-main);
+            padding: 5rem 5% 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .footer-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+        .footer-col h4 {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.9rem;
+        }
+        .footer-col ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .footer-col ul li a:hover {
+            color: var(--primary-accent);
+        }
+        .org-details-list li {
+            margin-bottom: 0.7rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .org-details-list a {
+            color: var(--primary-accent);
+            text-decoration: none;
+        }
+        .footer-bottom-copy {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Contact Page Section */
+        .section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .contact-box {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-box h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        .contact-detail {
+            margin-bottom: 1.2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-detail span {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .contact-detail strong, .contact-detail a {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background: var(--primary-accent);
+            color: #ffffff;
+            padding: 0.8rem 1.6rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .btn-primary:hover {
+            background: var(--primary);
+        }
+
+        /* Modals */
+        .modal-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 3rem 1rem;
+        }
+        .modal-content {
+            background: #ffffff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        .modal-close {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: var(--light-bg);
+            border: 1px solid var(--border);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+        }
+        .policy-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+        .policy-content h3 {
+            font-size: 1.3rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+        .policy-content p, .policy-content ul {
+            margin-bottom: 1rem;
+        }
+        .policy-content ul {
+            padding-left: 1.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .content-section, .contact-grid, .footer-layout, .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-badge">208</div>
+                208 CARES INCORPORATED
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-main">
+        <h1>Supporting Idaho Communities, Uplifting Those in Need</h1>
+        <p>Welcome to the official home of 208 CARES INCORPORATED. We are a dedicated 501(c)(3) nonprofit organization uniting compassionate citizens, local leaders, and community partners to provide direct relief, support for wounded veterans and families, and positive community transformation across Boise, Idaho, and beyond.</p>
+    </section>
+
+    <!-- Blue Mid Banner Section -->
+    <section class="blue-banner">
+        <div class="blue-banner-container">
+            <h2>Our Enduring Commitment to Service and Community Care</h2>
+            <p>At 208 CARES INCORPORATED, we believe that true community strength lies in how we support our neighbors during times of adversity. Operating from Boise, ID 83701 (Po Box 603), our organization stands as a pillar of hope, mentorship, and practical relief. We recognize that meaningful progress happens when individuals come together with a shared vision, pooling diverse talents and resources to assist those who have served our country and local families in need of a helping hand.</p>
+        </div>
+    </section>
+
+    <!-- Image & Text Section -->
+    <section class="content-section">
+        <div class="content-image">
+            <img src="https://picsum.photos/id/1059/600/400" alt="Community Support and Outreach">
+        </div>
+        <div class="content-text">
+            <h3>Building Stronger, More Connected Neighborhoods</h3>
+            <p>Community resilience is forged through proactive care and mutual aid. 208 CARES INCORPORATED actively collaborates with regional organizations, civic groups, and local volunteers to address pressing needs throughout Idaho.</p>
+            <p>Whether we are coordinating essential support services, assisting veterans and their families, or organizing community outreach initiatives, our focus remains firmly on creating an environment where every individual feels supported, valued, and empowered to succeed.</p>
+        </div>
+    </section>
+
+    <!-- Full Detailed About Us Section -->
+    <section id="about" class="about-expanded-section">
+        <h2>About 208 CARES INCORPORATED</h2>
+        <p>Founded on principles of compassion, community solidarity, and dedicated service, <strong>208 CARES INCORPORATED</strong> operates as an officially registered 501(c)(3) non-profit organization under federal guidelines (EIN: 47-3477357). Based at Po Box 603, Boise ID 83701, our organization serves as a vital resource for community aid and veteran assistance.</p>
+        
+        <p>Our initiatives focus on empowering individuals and families through direct support programs, civic engagement, and collaborative relief projects. We believe that honoring our commitment to our community requires absolute operational transparency, sound governance, and equitable support distribution across all demographic lines.</p>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h4>Our Mission</h4>
+                <p>To provide rapid relief, community support, and essential resources to individuals, families, and veterans in crisis, fostering long-term stability and resilience.</p>
+            </div>
+            <div class="about-card">
+                <h4>Our Vision</h4>
+                <p>A connected and supportive Idaho where every resident in need has access to compassionate aid, community solidarity, and opportunities for a brighter future.</p>
+            </div>
+            <div class="about-card">
+                <h4>Core Principles</h4>
+                <p>Uncompromising integrity, complete operational transparency, applicant confidentiality, and inclusive community collaboration across all public initiatives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Bottom Banner Section -->
+    <section class="dark-banner">
+        <div class="dark-banner-container">
+            <h2>Be Part of Something Extraordinary</h2>
+            <p>Your journey of service and community impact continues today. Whether you are looking to volunteer your time, support our local outreach programs, or partner with our organization, there is a place for you in the 208 CARES family. Together, we can build a stronger, more connected Idaho.</p>
+            <div class="action-prompt">
+                <strong>Action Prompt:</strong> Reach out to our administrative team today at <a href="mailto:query@208cares.bond">query@208cares.bond</a> to learn more about our outreach programs, inquire about volunteer opportunities, or support our tax-deductible 501(c)(3) community initiatives.
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2>Contact 208 CARES INCORPORATED</h2>
+            <p style="color: var(--text-muted);">Reach out to our administrative team for inquiries, support, or verification.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-box">
+                <h3>Contact Information</h3>
+                <div class="contact-detail">
+                    <span>Legal Entity Name</span>
+                    <strong>208 CARES INCORPORATED</strong>
+                </div>
+                <div class="contact-detail">
+                    <span>Federal Tax ID (EIN)</span>
+                    <strong>47-3477357</strong>
+                </div>
+                <div class="contact-detail">
+                    <span>Official Email Address</span>
+                    <a href="mailto:query@208cares.bond">query@208cares.bond</a>
+                </div>
+                <div class="contact-detail">
+                    <span>Official Domain</span>
+                    <a href="https://208cares.bond">208cares.bond</a>
+                </div>
+                <div class="contact-detail">
+                    <span>Mailing Address</span>
+                    <strong>Po Box 603<br>Boise ID 83701, United States</strong>
+                </div>
+            </div>
+            <div class="contact-box">
+                <h3>Send Us A Message</h3>
+                <form class="contact-form" onsubmit="gtag_report_conversion(); event.preventDefault(); alert('Message sent successfully to query@208cares.bond!');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="How can 208 CARES INCORPORATED assist you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-layout">
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a onclick="openModal('privacyModal')">Privacy Policy</a></li>
+                    <li><a onclick="openModal('termsModal')">Terms of Use</a></li>
+                    <li><a onclick="openModal('nondiscrimModal')">Nondiscrimination Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>208 CARES INCORPORATED</h4>
+                <ul class="org-details-list">
+                    <li><strong>EIN:</strong> 47-3477357</li>
+                    <li><strong>Address:</strong><br>Po Box 603<br>Boise ID 83701<br>United States</li>
+                    <li><strong>Email:</strong> <a href="mailto:query@208cares.bond">query@208cares.bond</a></li>
+                    <li><strong>Domain:</strong> <code>208cares.bond</code></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom-copy">
+            &copy; 2026 208 CARES INCORPORATED. All rights reserved. <code>208cares.bond</code> is an official domain.
+        </div>
+    </footer>
+
+    <!-- POLICY MODALS -->
+    <!-- Full Privacy Policy Modal -->
+    <div id="privacyModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Full Privacy Policy</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> 208 CARES INCORPORATED (EIN: 47-3477357) | 
+                <strong>Domain:</strong> 208cares.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>208 CARES INCORPORATED ("we," "our," or "us") operates the official website <code>208cares.bond</code>. We are deeply committed to protecting the privacy, security, and confidentiality of all visitors, program participants, donors, and community supporters who interact with our 501(c)(3) organization.</p>
+                
+                <h3>1. Information We Collect</h3>
+                <p>We collect personal information that you voluntarily provide to us when communicating with our administrative team, registering for support programs, or submitting inquiries through our website. This includes:</p>
+                <ul>
+                    <li><strong>Contact Details:</strong> Your full name, email address (such as <code>query@208cares.bond</code>), telephone number, and physical mailing address.</li>
+                    <li><strong>Correspondence Data:</strong> Assistance requests, feedback, or documentation submitted via direct email or web contact forms.</li>
+                    <li><strong>Technical Data:</strong> Non-identifying IP addresses, browser types, device specifications, and server access logs collected automatically to safeguard website security and optimize performance.</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <p>208 CARES INCORPORATED utilizes collected information strictly for legitimate charitable and organizational purposes:</p>
+                <ul>
+                    <li>To respond directly to inquiries, assistance requests, and community correspondence.</li>
+                    <li>To coordinate relief services, veteran assistance programs, and community outreach events.</li>
+                    <li>To maintain accurate administrative records and comply fully with federal 501(c)(3) tax-reporting and regulatory requirements.</li>
+                </ul>
+
+                <h3>3. Confidentiality and Data Protection</h3>
+                <p>We maintain strict administrative, physical, and technical safeguards. <strong>208 CARES INCORPORATED does not sell, rent, lease, or trade personal data or donor information to any third parties under any circumstances.</strong> Information is shared solely with trusted service providers bound by strict confidentiality obligations who directly support our digital operations and website infrastructure.</p>
+
+                <h3>4. Policy Updates and Contact Information</h3>
+                <p>We may update this Privacy Policy periodically to reflect organizational improvements or statutory changes. If you have any questions regarding this policy or wish to review, update, or remove your personal data, please contact our administrative team at:</p>
+                <p>
+                    <strong>208 CARES INCORPORATED</strong><br>
+                    Po Box 603, Boise ID 83701, United States<br>
+                    Email: <a href="mailto:query@208cares.bond">query@208cares.bond</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Terms of Use Modal -->
+    <div id="termsModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Full Terms of Use</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> 208 CARES INCORPORATED (EIN: 47-3477357) | 
+                <strong>Domain:</strong> 208cares.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>Welcome to <code>208cares.bond</code>. By accessing, browsing, or utilizing this website, you explicitly agree to be bound by these full Terms of Use and all applicable local, state, and federal laws and regulations.</p>
+
+                <h3>1. Non-Profit Status and Purpose</h3>
+                <p>208 CARES INCORPORATED is a duly registered 501(c)(3) non-profit organization operating under Employer Identification Number (EIN) 47-3477357, with our mailing address at Po Box 603, Boise ID 83701. This website is established and operated exclusively for charitable, educational, and community assistance purposes.</p>
+
+                <h3>2. Acceptable Use Policy</h3>
+                <p>Users agree to utilize this website strictly for lawful, non-commercial purposes. You agree not to submit fraudulent assistance applications, engage in automated data scraping, attempt unauthorized access to our digital systems, or misuse official contact channels (such as <code>query@208cares.bond</code>) for unsolicited advertising, harassment, or spam.</p>
+
+                <h3>3. Intellectual Property Rights</h3>
+                <p>All text, graphics, logos, images, design elements, and downloadable content featured on <code>208cares.bond</code> are the intellectual property of 208 CARES INCORPORATED or its content contributors and are protected by United States and international copyright laws. Unauthorized reproduction, modification, distribution, or republication of any material without express written consent is strictly prohibited.</p>
+
+                <h3>4. Limitation of Liability</h3>
+                <p>208 CARES INCORPORATED provides the information on this website on an "as is" and "as available" basis without warranties of any kind, either express or implied. The organization shall not be held liable for any direct, indirect, incidental, or consequential damages arising out of or in connection with the use of this website or reliance on its content.</p>
+
+                <h3>5. Contact Information</h3>
+                <p>For any questions or concerns regarding these Terms of Use, please reach out via email at <a href="mailto:query@208cares.bond">query@208cares.bond</a> or write to us at Po Box 603, Boise ID 83701.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nondiscrimination Policy Modal -->
+    <div id="nondiscrimModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('nondiscrimModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Nondiscrimination Policy</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> 208 CARES INCORPORATED (EIN: 47-3477357) | 
+                <strong>Domain:</strong> 208cares.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>208 CARES INCORPORATED champions a strict policy of equal opportunity, inclusion, and nondiscrimination across all of our community outreach efforts, relief services, events, volunteer selections, and staffing decisions.</p>
+
+                <h3>1. Equal Access and Opportunity</h3>
+                <p>In accordance with federal 501(c)(3) guidelines and our core values, 208 CARES INCORPORATED does not discriminate, exclude, or treat individuals differently on the basis of race, color, religion, creed, gender, gender expression, age, national origin or ancestry, disability, marital status, sexual orientation, military or veteran status, or any other legally protected status in any of our operations or activities.</p>
+
+                <h3>2. Scope of Policy</h3>
+                <p>This steadfast nondiscrimination commitment applies universally to the delivery of relief assistance, community resources, public events, and the recruitment of staff and volunteers.</p>
+
+                <h3>3. Contact</h3>
+                <p>To submit feedback or inquiries regarding our nondiscrimination practices, please contact our compliance team at <a href="mailto:query@208cares.bond">query@208cares.bond</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal JavaScript -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
